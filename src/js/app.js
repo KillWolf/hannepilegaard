@@ -9,7 +9,7 @@ import { getHashPath} from './utility/utility.js';
 
 const routes = {
 	'/' : home,
-	'/adv	ocacy' : advocacy
+	'/advocacy' : advocacy
 };
 
 let hashPath = getHashPath();
