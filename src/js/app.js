@@ -1,3 +1,6 @@
+// Styles
+import '../css/style.css';
+
 //initialize 
 import { NAV_BAR } from './common/navbar.js'
 import { home } from './pages/homePage.js';
@@ -6,7 +9,7 @@ import { getHashPath} from './utility/utility.js';
 
 const routes = {
 	'/' : home,
-	'/advocacy' : advocacy
+	'/adv	ocacy' : advocacy
 };
 
 let hashPath = getHashPath();
