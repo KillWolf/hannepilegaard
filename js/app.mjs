@@ -1,5 +1,5 @@
 //initialize 
-import { NAV_BAR } from './navbar/navbar.js'
+import { NAV_BAR } from './common/navbar.js'
 import { home } from './pages/homePage.js';
 import { advocacy } from './pages/advocacyPage.js'
 import { getHashPath} from './utility/utility.js';
@@ -19,7 +19,6 @@ rootDiv.innerHTML = routes[hashPath];
 
 
 const onNavigate = (pathName) => {
-	console.log(hashPath)
 	window.history.pushState(
 		{},
 		pathName,
@@ -33,5 +32,6 @@ const onNavigate = (pathName) => {
 window.onNavigate = onNavigate;
 
 window.onpopstate = () => {
-  rootDiv.innerHTML = routes[hashPath]
+	hashPath = getHashPath();
+	rootDiv.innerHTML = routes[hashPath]
 }

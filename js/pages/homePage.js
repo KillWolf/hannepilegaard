@@ -1,11 +1,8 @@
+import { HERO_IMAGE_FUNCTION } from '../common/heroimage.js'
+
 const home = `
 <div class="header-container">
-		<div class="header-image-container">
-			<h1 class="hero-image-text">HANNE PILEGAARD</h1>
-			<div class="hero-image-container">
-				<img src="images/mountain.jpeg" alt="">
-			</div>
-		</div>
+		${HERO_IMAGE_FUNCTION('HANNE PILEGAARD', 'mountain')}
 	</div>
 	<div class="body-container">
 		<div class="sub-header-container">
