@@ -1,5 +1,9 @@
+import { HERO_IMAGE_FUNCTION } from '../common/heroimage.js'
+
 const advocacy = `
-<h1 style="margin-top: 200px;">this is advocacy </h1>
+    <div class="header-container">
+		${HERO_IMAGE_FUNCTION('ADVOCACY', 'canyon')}
+	</div>
 `
 
 export { advocacy };
