@@ -1,3 +1,6 @@
+// Styles
+import '../css/style.css';
+
 //initialize 
 import { NAV_BAR } from './common/navbar.js'
 import { home } from './pages/homePage.js';
